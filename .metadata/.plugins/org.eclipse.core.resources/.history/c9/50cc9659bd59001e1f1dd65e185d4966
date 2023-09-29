@@ -1,0 +1,8 @@
+package com.springboot.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller //it is return the view and data
+public class Client1Controller {
+
+}

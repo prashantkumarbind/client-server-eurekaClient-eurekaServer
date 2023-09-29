@@ -1,0 +1,8 @@
+package com.springboot.service;
+
+
+
+@org.springframework.cloud.openfeign.FeignClient(url="http://localhost:8181", value="client1")
+public interface FeignClient {
+
+}

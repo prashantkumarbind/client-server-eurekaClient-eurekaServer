@@ -1,0 +1,19 @@
+package com.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+public class Client3Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Client3Application.class, args);
+		System.err.println("Spring Boot Starter*********************8183*****************");
+	}
+	
+	public RestTemplate getRestTemplate() {
+		
+		   return new RestTemplate();
+	}
+}

@@ -1,0 +1,16 @@
+package com.springboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller //it is return the view and data
+public class Client1Controller {
+
+		@ResponseBody
+		@GetMapping("/client1name/{id}")
+		public String client1(@PathVariable int id) {
+			   return "Client First Name::PRASHANT KUMAR TEJASH";
+		}
+}
